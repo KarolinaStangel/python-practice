@@ -7,10 +7,10 @@ def getNumber2():
 def getNumber3():
     return int(input("Podaj trzecią liczbę: "))
 
-def calculateMiddle():
-    middle = (getNumber1()+getNumber2()+getNumber3())/3
-    return print(float(round(middle, 2)))
+def calculateAverage():
+    average = (getNumber1() + getNumber2() + getNumber3()) / 3
+    return print(float(round(average, 2)))
 
-print("Podawaj tylko liczaby całkowite")
+print("Podawaj tylko liczby całkowite")
 
-calculateMiddle()
+calculateAverage()
