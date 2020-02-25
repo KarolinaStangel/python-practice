@@ -1,0 +1,10 @@
+Pobierz od użytkownika liczbę cukierków oraz liczbę dzieci.
+Policz ile cukierków przypadnie na jedno dziecko oraz ile cukierków zostanie
+(zakładając, że wszystkie dzieci muszą dostać tyle samo cukierków.
+
+Przykładowy wydruk na konsoli:
+W klasie jest 14 dzieci.
+Było 145 cukierków.
+Każde dziecko dostało 10 cukierków.
+W sumie dzieci dostały 140 cukierków.
+Zostało 5 cukierków.
