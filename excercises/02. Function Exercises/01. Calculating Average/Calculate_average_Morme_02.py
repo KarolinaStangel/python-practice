@@ -9,8 +9,8 @@ def getNumber3():
 
 def calculateAverage():
     average = (getNumber1() + getNumber2() + getNumber3()) / 3
-    return print(float(round(average, 2)))
+    return round(average, 2)
 
 print("Podawaj tylko liczby całkowite")
 
-calculateAverage()
+print(calculateAverage())
