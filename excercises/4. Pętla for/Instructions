@@ -19,7 +19,7 @@ Owoce:
 
 3. Spróbuj teraz wydrukować to samo z pętlą while
 
-4. Stwórz listę większej liczby zwierząt. Drukuj listę, dopóki nie pojawi
-się zwierze, którego nazwa zaczyna się od "k"
+4. Stwórz listę większej liczby zwierząt. Drukuj listę, dopóki nie
+    pojawi się zwierzę, którego nazwa zaczyna się od "k".
 
 Podpowiedź: mój_string.startswith('Python')
