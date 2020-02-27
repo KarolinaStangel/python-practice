@@ -1,0 +1,75 @@
+Zadania z pętlą while:
+
+1.
+Napisz pętle, która będzie chodzić w nieskończoność.
+
+2.
+Napisz pętlę while, która będzie drukować losowo generowane liczby od 1 do 20,
+dopóki random number generator nie wylosuje liczby  10.
+
+3.
+Napisz pętlę for, która będzie drukować liczby od 1 do 10.
+Następnie zamień ją na pętlę while.
+
+4.
+Napisz program, który będzie pisał użytkownika o podanie trzech liczb całkowitych.
+Gdy użytkownik poda pięć liczb, program drukuje te liczby pod spodem.
+
+5.
+Napisz program, który będzie prosił użytkownika w pętli while o podanie pięciu liczb zmiennoprzecinkowych.
+Gdy użytkownik poda te liczby, program wydrukuje ich iloczyn, sumę oraz średnią.
+
+6.
+Program prosi użytkownika o podawanie stringów dopóki user nie napisze stringu
+zawierającego znak zapytania.
+Po zakończeniu pętki program drukuje wszystko, co użytkownik napisał, w jednej linii.
+
+6.
+Napisz program, który będzie w kółko prosił użytkownika o podawanie stringów.
+Program przestaje pytać, gdy użytkownik poda string dłuższy niż 20 znaków.
+
+7. Napisz program, który będzie w kółko prosił użytkownika o podanie liczby.
+Program przestanie prosić o liczbe, gdy użytkownik poda liczbę 99.
+Następnie policzy liczbę liczb parzystych podanych przez użytkownika
+oraz procent liczb parzystych do wszystkich liczb.
+
+8.
+Napisz program "sprawdzian z matematyki". Program będzie pytał użytkownika
+o podanie rozwiązania do zadania (np. 3 + 4 = ?, 3 - 2 = ?).
+Kiedy użytkownik odpowie poprawnie na 5 pytań, test się kończy,
+a program oblicza procent dobrych odpowiedzi.
+
+9. Pętla prosi użytkownika o podanie imienia/nazwy użytkownika.
+Pyta w kółko dopóki użytkownik nie poda nazwy, która ma więcej niż 2 znaki,
+z których pierwsza to wielka litera.
+
+10.
+Napisz program, który symuluje robienie zakupów.
+Najpierw wyświetl użytkownikowi listę pięciu produktów.
+Niech użytkownik poda, który produkt chce kupić.
+Potem zapytaj o liczbę produktów, jaką chce kupić.
+Pytaj w kółko o produkty i ilości, aż użytkownik nie napisze "exit".
+Na koniec wydrukuj wszystkie produkty oraz całkowitą cenę.
+
+11.
+Napisz program, który będzie walidować adres email.
+Program prosi użytkownika o podanie adresu email.
+Jeżeli użytkownik poda adres email (czyli string zawierający znak @ i ., większy niż 5 znaków),
+program drukuje "dziękuję". W przeciwnym wypadku program pyta użytkownika w kółko, aż
+poda poprawny adres email.
+
+12.
+Symulacja logowania. Stwórz listę par login-hasło.
+Użytkownik zaloguje się poprawnie do programu, jeżeli poda nazwę użytkownika,
+która znajduje się na liście, a następnie poda hasło, które będzie pasować
+do tego loginu. Jeżeli user nie poda poprawnej kombinacji,
+program pyta go w kółko o podanie tych danych.
+
+
+-----
+Napisz program, który będzie prosił użytkownika o podanie pięciu pytań do ankiety.
+(Czy jesteś introwertykiem? Czy masz depresję? Czy brakuje Ci witaminy D? Whatever.)
+Następnie program będzie zadawał te pytania użytkownikowi
+
+
+
