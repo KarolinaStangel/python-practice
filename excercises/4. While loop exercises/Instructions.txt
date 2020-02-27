@@ -20,6 +20,11 @@ Napisz program, który będzie prosił użytkownika w pętli while o podanie pi�
 Gdy użytkownik poda te liczby, program wydrukuje ich iloczyn, sumę oraz średnią.
 
 6.
+Program prosi użytkownika o podawanie stringów dopóki user nie napisze stringu
+zawierającego znak zapytania.
+Po zakończeniu pętki program drukuje wszystko, co użytkownik napisał, w jednej linii.
+
+6.
 Napisz program, który będzie w kółko prosił użytkownika o podawanie stringów.
 Program przestaje pytać, gdy użytkownik poda string dłuższy niż 20 znaków.
 
@@ -37,6 +42,28 @@ a program oblicza procent dobrych odpowiedzi.
 9. Pętla prosi użytkownika o podanie imienia/nazwy użytkownika.
 Pyta w kółko dopóki użytkownik nie poda nazwy, która ma więcej niż 2 znaki,
 z których pierwsza to wielka litera.
+
+10.
+Napisz program, który symuluje robienie zakupów.
+Najpierw wyświetl użytkownikowi listę pięciu produktów.
+Niech użytkownik poda, który produkt chce kupić.
+Potem zapytaj o liczbę produktów, jaką chce kupić.
+Pytaj w kółko o produkty i ilości, aż użytkownik nie napisze "exit".
+Na koniec wydrukuj wszystkie produkty oraz całkowitą cenę.
+
+11.
+Napisz program, który będzie walidować adres email.
+Program prosi użytkownika o podanie adresu email.
+Jeżeli użytkownik poda adres email (czyli string zawierający znak @ i ., większy niż 5 znaków),
+program drukuje "dziękuję". W przeciwnym wypadku program pyta użytkownika w kółko, aż
+poda poprawny adres email.
+
+12.
+Symulacja logowania. Stwórz listę par login-hasło.
+Użytkownik zaloguje się poprawnie do programu, jeżeli poda nazwę użytkownika,
+która znajduje się na liście, a następnie poda hasło, które będzie pasować
+do tego loginu. Jeżeli user nie poda poprawnej kombinacji,
+program pyta go w kółko o podanie tych danych.
 
 
 -----
