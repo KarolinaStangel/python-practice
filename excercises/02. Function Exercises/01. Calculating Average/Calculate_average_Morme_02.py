@@ -23,8 +23,9 @@ def getNumber():
 i = 0
 sum = 0
 while i < 5:
-    numbers.append(getNumber())
-    sum += int(numbers[i])
+    num = getNumber()
+    numbers.append(num)
+    sum += int(num)
     i += 1
 
 size = len(numbers)
