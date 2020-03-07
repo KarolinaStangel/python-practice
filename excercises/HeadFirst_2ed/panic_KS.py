@@ -1,0 +1,17 @@
+phrase = "Don't panic!"
+plist = list(phrase)
+print(phrase)
+print(plist)
+for turn in range(4):
+    plist.pop()
+    print(plist)
+plist.remove(plist[0])
+print(plist)
+plist.pop(2)
+print(plist)
+plist.insert(len(plist) - 2, plist.pop(-1))
+print(plist)
+plist.insert(2, plist.pop(3))
+new_phrase = ''.join(plist)
+print(plist)
+print(new_phrase)
