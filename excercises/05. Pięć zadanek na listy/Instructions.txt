@@ -3,11 +3,11 @@ Zakres:
 - pobieranie z listy elementów o danym indeksie (fruits[0] – pierwszy element, numbers[3], fruits[-1] – ostatni element)
 - trawersowanie listy:
 for number in numbers:
-if (number == 2):
-print("yes")
+    if (number == 2):
+        print("yes")
 
 for fruit in fruits:
-print(fruit)
+    print(fruit)
 
 
 1.
