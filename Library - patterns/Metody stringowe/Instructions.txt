@@ -20,3 +20,5 @@
 
 11. Sprawdź czy napis jest liczbą, liczbą dziesiętną, napisem bez cyfr, napisem z literami i cyframi
 
+    W tym zadaniu otrzymujesz 4 wartości false. Zwłaszcza 2 ostatnie wyniki mogą Cię dziwić. Nasz napis zawierał spacje,
+    składał się z wielu wyrazów i dlatego nie jest alfa-stringiem ani alfanumerykiem
