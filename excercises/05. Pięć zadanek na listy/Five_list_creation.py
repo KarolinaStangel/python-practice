@@ -33,10 +33,10 @@ numbers1 = [
 93, 857, 440, 380, 126, 721, 328, 753, 470, 743, 527
 ]
 
-numbers2 = []
+#numbers2 = []
 
 for i in numbers1:
     if i%2 == 0:
-        numbers2.append(i)
-print(numbers2)
+        #numbers2.append(i)
+        print(i, end="-")
 
