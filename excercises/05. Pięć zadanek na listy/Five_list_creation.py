@@ -38,5 +38,5 @@ numbers1 = [
 for i in numbers1:
     if i%2 == 0:
         #numbers2.append(i)
-        print(i, end="-")
+        print(i, end="-") #tu zamiast i miałem drugą listę -> numbers2
 
