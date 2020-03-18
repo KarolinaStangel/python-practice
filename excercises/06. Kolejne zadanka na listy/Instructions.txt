@@ -1,6 +1,7 @@
 Zakres:
 Uruchom następujące instrukcje.
 Co drukują?
+
 for x in range(8):
     print(x)
 
