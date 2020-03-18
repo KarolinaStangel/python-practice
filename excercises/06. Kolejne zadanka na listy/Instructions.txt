@@ -1,5 +1,6 @@
 Zakres:
-1. Uruchom następujące instrukcje. Co drukują?
+Uruchom następujące instrukcje.
+Co drukują?
 for x in range(8):
     print(x)
 
@@ -9,6 +10,7 @@ for x in range(4, 9):
 for x in range (10, 20, 3):
     print(x)
 
+------
 Zadanie 1:
 Wydrukuj liczby od 0 do 20 (linia po linii)
 0
