@@ -55,8 +55,13 @@ for s in range(0, 6):
 print("The loop has ended.")
 print("----------------")
 
-#8
+#8.1
 for s in reversed(range(0, 21)):
+    print(s)
+print("----------------")
+
+#8.2
+for s in range(20, -1, -1):
     print(s)
 print("----------------")
 
@@ -69,4 +74,6 @@ while items:
 
 your_answer_is=""
 print(your_answer_is)
+
+
 
