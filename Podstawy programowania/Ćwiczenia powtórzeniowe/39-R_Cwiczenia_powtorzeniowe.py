@@ -2,7 +2,7 @@
 # Rozwiązać równanie ax+b=0.
 choice = "t"
 while choice == "t":
-    print("Mamy równanie: ax+b=0. \nW celu obliczenia warości x roszę wprowadzić wartości dla zmiennych a i b:")
+    print("Mamy równanie: ax+b=0. \nW celu obliczenia warości x proszę wprowadzić wartości dla zmiennych a i b:")
     a = float(input("Podaj a:"))
     b = float(input("Podaj b:"))
     x = (-b)/a
