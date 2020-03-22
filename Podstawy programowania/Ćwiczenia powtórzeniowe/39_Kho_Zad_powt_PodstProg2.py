@@ -25,6 +25,7 @@ else:
     rozw = (-b / a)
     print("x = " + str(rozw))
 
+
 # 2
 def get_number(text):
     num = input(text)
@@ -50,9 +51,10 @@ elif delta > 0:
     print("Delta wynosi " + str(delta))
     rozw_1 = round((-b-math.sqrt(delta))/(2*a), 2)
     rozw_2 = round((-b+math.sqrt(delta))/(2*a), 2)
-    print("Rozwiązania tego równania kwadratowego: x1 = " + str(rozw_1) + ", " + "x2 = " + str(rozw_2) + ".")
+    print("Rozwiązania tego równania kwadratowego: x\u2081 = " + str(rozw_1) + ", " + "x\u2082 = " + str(rozw_2) + ".")
 else:
     print("Równanie nie ma rozwiązania w zbiorze liczb rzeczywistych.")
+
 
 #3
 def triangle_sides():
