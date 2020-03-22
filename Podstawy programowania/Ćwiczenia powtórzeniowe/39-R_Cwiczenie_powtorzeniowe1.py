@@ -2,8 +2,8 @@
 # Rozwiązać równanie ax+b=0.
 
 def num_choice(name):
+    num = input("Podaj liczbę "+name+": ")
     while True:
-      num = input("Podaj liczbę "+name+": ")
       try:
           num = float(num)
           break
@@ -21,11 +21,19 @@ def decision():
             return choice
         choice = input("Błędny wybór! Wybierz 't' lub 'n': ")
 
+def no_0_division():
+    a = num_choice("a")
+    while True:
+        if a != 0:
+            return a
+        else:
+            print("Nie dzieli się przez 0.")
+            a = num_choice("a")
 
 choice = "t"
 while choice == "t":
     print("Mamy równanie: ax+b=0. \nW celu obliczenia warości x proszę wprowadzić wartości dla zmiennych a i b:")
-    a = num_choice("a")
+    a = no_0_division()
     b = num_choice("b")
     x = (-b)/a
     print("x =", round(x, 2))
