@@ -29,16 +29,16 @@ while choice == "t":
     a = get_number("a")
     b = get_number("b")
     c = get_number("c")
-    delta = float(b**2 - 4*a*c)
+    delta = float(b ** 2 - 4 * a * c)
     print("delta =", round(delta, 2))
     if delta < 0:
-        print("Ponieważ delta jest mniejsza od zera równanie nie ma rozwiązań w zbiorze liczb rzeczywistych.")
+        print("Ponieważ delta jest mniejsza od zera, równanie nie ma rozwiązań w zbiorze liczb rzeczywistych.")
     elif delta == 0:
         x1 = float(( - b) - math.sqrt(delta)) / 2 * a
         x2 = float(( - b) + math.sqrt(delta)) / 2 * a
-        print("Równanie ma jedno rozwiązanie:  \nx1 = x2 = "+str(round(x2, 2)))
+        print("Równanie ma jedno rozwiązanie:  \nx1 = x2 = " + str(round(x2, 2)))
     else:
         x1 = float(( - b) - math.sqrt(delta)) / 2 * a
         x2 = float(( - b) + math.sqrt(delta)) / 2 * a
-        print("Równanie ma dwa rozwiązania: \nx1 = "+str(round(x1, 2)), "\nx2 = "+str(round(x2, 2)))
+        print("Równanie ma dwa rozwiązania: \nx1 = " + str(round(x1, 2)), "\nx2 = " + str(round(x2, 2)))
     choice = get_decision()
