@@ -35,7 +35,7 @@ while choice == "t":
     elif delta == 0:
         x1 = float(( - b) - math.sqrt(delta)) / 2 * a
         x2 = float(( - b) + math.sqrt(delta)) / 2 * a
-        print("Równanie ma jedno rozwiązanie:  \nx1= x2 = "+str(round(x2, 2)))
+        print("Równanie ma jedno rozwiązanie:  \nx1 = x2 = "+str(round(x2, 2)))
     else:
         x1 = float(( - b) - math.sqrt(delta)) / 2 * a
         x2 = float(( - b) + math.sqrt(delta)) / 2 * a
