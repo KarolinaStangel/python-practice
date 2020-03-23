@@ -3,6 +3,7 @@
 # można zbudować trójkąt, jeżeli tak obliczyć jego pole.
 # P=sqrt(p*(p-a)*(p-b)*(p-c)),
 # gdzie p jest połową obwodu.
+import math
 
 def get_number(name):
     number = input("Podaj liczbę " + name + ": ")
