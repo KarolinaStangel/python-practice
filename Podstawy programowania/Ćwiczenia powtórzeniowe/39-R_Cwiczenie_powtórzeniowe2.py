@@ -1,16 +1,17 @@
 # Zadanie 2
 # Rozwiązać równanie ax2+bx+c=0.
-def num_choice(name):
+import math
+def get_number(name):
     while True:
-      num = input("Podaj liczbę "+name+": ")
+      number = input("Podaj liczbę " + name + ": ")
       try:
-          num = float(num)
+          number = float(number)
           break
       except:
-          num = input("Błąd, podaj liczbę: ")
-    return num
+          number = input("Błąd, podaj liczbę: ")
+    return number
 
-def decision():
+def get_decision():
     choice = input("Czy chcesz policzyć jeszcze raz? (t/n) ")
     while True:
         if choice == "t":
@@ -18,15 +19,25 @@ def decision():
         elif choice == "n":
             print("\nDziękuję za skorzystanie z mojego programu.\n")
             return choice
-        choice = input("Błędny wybór! Wybierz 't' lub 'n': ")
+        choice = input("Błędny wybór! Wybierz t dla 'tak' lub n dla 'nie': ")
 
 
 choice = "t"
 while choice == "t":
-    print("Mamy równanie kwadratowe: ax+bx+c=0. \nW celu obliczenia warości x proszę wprowadzić wartości dla zmiennych a, b i c:")
-    a = num_choice("a")
-    b = num_choice("b")
-    c = num_choice("c")
-    delta = b**2 - 4*a*c
+    print("Mamy równanie kwadratowe: ax\u00b2+bx+c=0. \nW celu obliczenia warości x proszę wprowadzić wartości dla zmiennych a, b i c:")
+    a = get_number("a")
+    b = get_number("b")
+    c = get_number("c")
+    delta = float(b**2 - 4*a*c)
     print("delta =", round(delta, 2))
-    choice = decision()
+    if delta < 0:
+        print("Ponieważ delta jest mniejsza od zera równanie nie ma rozwiązań w zbiorze liczb rzeczywistych")
+    elif delta == 0:
+        x1 = float(( - b) + math.sqrt(delta)) / 2 * a
+        x2 = float(b + math.sqrt(delta)) / 2 * a
+        print("Równanie ma jedno rozwiązanie: ", x1)
+    else:
+        x1 = float(( - b) + math.sqrt(delta)) / 2 * a
+        x2 = float(b + math.sqrt(delta)) / 2 * a
+        print("Równanie ma dwa rozwiązania: \nx1= "+str(x1), "\nx2 = "+str(x2))
+    choice = get_decision()
