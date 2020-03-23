@@ -20,5 +20,5 @@ if a == 0:
 elif b == 0:
     print("Wartość \"x\" wynosi 0.")
 else:
-    solution = round((-b / a), 2)
-    print("Wartość \"x\" wynosi " + str(solution))
+    result = round((-b / a), 2)
+    print("Wartość \"x\" wynosi " + str(result))
