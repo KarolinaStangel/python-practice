@@ -1,3 +1,5 @@
+import math
+
 def get_number(text):
     number = input(text)
     while True:
@@ -17,11 +19,11 @@ c = get_number("Podaj c:\n")
 delta = (b**2) - (4*a*c)
 
 if a == 0:
-    print("To nie jest równanie kradratowe.")
+    print("To nie jest równanie kwadratowe.")
 elif delta > 0:
     print("Delta wynosi " + str(delta))
-    rozw_1 = round((-b-math.sqrt(delta))/(2*a), 2)
-    rozw_2 = round((-b+math.sqrt(delta))/(2*a), 2)
-    print("Rozwiązania tego równania kwadratowego: x\u2081 = " + str(rozw_1) + ", " + "x\u2082 = " + str(rozw_2) + ".")
+    solution_1 = round((-b - math.sqrt(delta)) / (2 * a), 2)
+    solution_2 = round((-b + math.sqrt(delta)) / (2 * a), 2)
+    print("Rozwiązania tego równania kwadratowego: x\u2081 = " + str(solution_1) + ", " + "x\u2082 = " + str(solution_2) + ".")
 else:
     print("Równanie nie ma rozwiązania w zbiorze liczb rzeczywistych.")
