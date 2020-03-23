@@ -1,64 +1,43 @@
-# Zadanie 3
-# Wczytać długości 3 boków trójkąta. Sprawdzić czy z podanych trzech długości odcinków
-# można zbudować trójkąt, jeżeli tak obliczyć jego pole.
-# P=sqrt(p*(p-a)*(p-b)*(p-c)),
-# gdzie p jest połową obwodu.
-
+# Zadanie 2
+# Rozwiązać równanie ax2+bx+c=0.
 
 import math
 
 
-def get_side():
-    length = input()
+def get_coefficient(coefficient_name):
+    number = input("Podaj " + coefficient_name + ": ")
     while True:
         try:
-            length = float(length)
-            if length <= 0:
-                length = input("Długość boku nie może być mniejsza lub równa zero. Spróbuj jeszcze raz.\n")
-            else:
-                return length
+            return float(number)
         except:
-            length = input("Nieprawidłowa wartość. Spróbuj jeszcze raz.\n")
+            number = input("Nieprawidłowa wartość. Spróbuj jeszcze raz podać współczynnik " + coefficient_name + ".\n")
 
 
-def get_sides(sides_no):
-    sides = []
-    for number in range(sides_no):
-        print(str(number + 1) + ". ", end="")
-        sides.append(get_side())
-    return sides
+def get_delta(a, b, c):
+    return b * b - 4 * a * c
 
 
-def get_circumference(sides):
-    circumference = 0
-    for side in sides:
-        circumference += side
-    return circumference
+print("Będziemy rozwiązywać równanie o postaci:")
+print("ax^2 + bx + c = 0")
+print("Podaj współczynniki a, b i c, aby otrzymać rozwiązanie.")
 
+a: float = get_coefficient("a")
+b: float = get_coefficient("b")
+c: float = get_coefficient("c")
 
-def can_make_triangle(sides):
-    for side in sides:
-        if side > get_circumference(sides) / 2:
-            return False
-    return True
+equasion: str = str(a) + "x^2 + " + str(b) + "x + " + str(c) + " = 0"
+delta: float = get_delta(a, b, c)
 
-
-def get_triangle_area(sides):
-    p = get_circumference(sides) / 2
-    area = 1
-    for side in sides:
-        area *= p - side
-    return math.sqrt(p * area)
-
-
-print("Będziemy liczyć pole trójkąta:")
-print("Podaj długość trzech boków.")
-
-sides = get_sides(3)
-
-if can_make_triangle(sides):
-    area = get_triangle_area(sides)
-    print("Pole tego trójkąta wynosi " + str(round(area, 2)) + ".")
+if a == 0:
+    print("Równanie " + equasion + " nie jest równanim kwadratowym.")
+elif delta < 0:
+    print("Równanie " + equasion + " nie ma rozwiązań w zbiorze liczb rzeczywistych.")
+elif delta == 0:
+    x = (0 - b) / (2 * a)
+    print("Rozwiązaniem równania " + equasion + " jest x = " + str(x) + ".")
 else:
-    print("Z tych odcinków nie można zbudować trójkąta.")
-
+    x1 = (0 - b - math.sqrt(delta)) / (2 * a)
+    x2 = (0 - b + math.sqrt(delta)) / (2 * a)
+    print("Rozwiązaniem równania " + str(a) + "x + " + str(b) + " = 0 są liczby: ")
+    print("x1 = " + str(round(x1, 2)))
+    print("x2 = " + str(round(x2, 2)))
