@@ -1,6 +1,7 @@
 # Zadanie 2
 # Rozwiązać równanie ax2+bx+c=0.
 import math
+
 def get_number(name):
     while True:
       number = input("Podaj liczbę " + name + ": ")
