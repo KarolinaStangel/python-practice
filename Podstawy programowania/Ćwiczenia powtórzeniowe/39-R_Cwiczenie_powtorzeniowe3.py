@@ -24,3 +24,9 @@ def get_decision():
             return choice
         choice = input("Błędny wybór! Wybierz 't' lub 'n': ")
 
+choice = "t"
+while choice == "t":
+
+
+
+    choice = get_decision()
