@@ -3,13 +3,13 @@
 import math
 
 def get_number(name):
+    number = input("Podaj liczbę " + name + ": ")
     while True:
-      number = input("Podaj liczbę " + name + ": ")
-      try:
-          number = float(number)
-          break
-      except:
-          number = input("Błąd, podaj liczbę: ")
+        try:
+            number = float(number)
+            break
+        except:
+            number = input("Błąd, podaj liczbę: ")
     return number
 
 def get_decision():
@@ -31,7 +31,9 @@ while choice == "t":
     c = get_number("c")
     delta = float(b ** 2 - 4 * a * c)
     print("Delta =", round(delta, 2))
-    if delta < 0:
+    if a == 0:
+        print("To nie jest równanie kwadratowe.")
+    elif delta < 0:
         print("Ponieważ delta jest mniejsza od zera, równanie nie ma rozwiązań w zbiorze liczb rzeczywistych.")
     elif delta == 0:
         x1 = float(( - b) - math.sqrt(delta)) / 2 * a
