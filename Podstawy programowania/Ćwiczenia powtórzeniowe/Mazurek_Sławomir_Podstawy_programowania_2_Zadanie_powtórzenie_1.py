@@ -21,4 +21,4 @@ elif b == 0:
     print("Wartość \"x\" wynosi 0.")
 else:
     result = round((-b / a), 2)
-    print("Wartość \"x\" wynosi " + str(result))
+    print("Wartość \"x\" wynosi " + str(result) + ".")

@@ -27,6 +27,6 @@ elif delta > 0:
     result_2 = round((-b + math.sqrt(delta)) / (2 * a), 2)
     print("Rozwiązania tego równania kwadratowego: x\u2081 = " + str(result_1) + ", " + "x\u2082 = " + str(result_2) + ".")
 elif delta == 0:
-    print("Delta wynosi " + str(delta) + "\nx\u2081 = 0, x\u2082 nie ma rozwiązania.")
+    print("Delta wynosi " + str(delta) + ", x = 0.")
 else:
     print("Równanie nie ma rozwiązania w zbiorze liczb rzeczywistych.")
