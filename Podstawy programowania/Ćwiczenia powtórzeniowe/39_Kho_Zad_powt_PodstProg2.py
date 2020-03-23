@@ -4,14 +4,14 @@ import cmath
 
 # 1
 def get_number(text):
-    num = input(text)
+    number = input(text)
     while True:
         try:
-            num = float(num)
+            number = float(number)
             break
         except:
-            num = input("Błędna wartość. Spróbuj ponownie:\n")
-    return num
+            number = input("Błędna wartość. Spróbuj ponownie:\n")
+    return number
 
 
 print("Mamy dane równanie ax + b = 0")
@@ -28,14 +28,14 @@ else:
 
 # 2
 def get_number(text):
-    num = input(text)
+    number = input(text)
     while True:
         try:
-            num = float(num)
+            number = float(number)
             break
         except:
-            num = input("Błędna wartość. Spróbuj ponownie:\n")
-    return num
+            number = input("Błędna wartość. Spróbuj ponownie:\n")
+    return number
 
 
 print("Mamy dane równanie kwadratowe ax^2+bx+c=0.")
@@ -65,14 +65,14 @@ def triangle_sides():
 
 
 def get_side(text):
-    num = input(text)
+    number = input(text)
     while True:
         try:
-            num = float(num)
+            number = float(number)
             break
         except:
-            num = input("Błędna wartość. Spróbuj ponownie:\n")
-    return num
+            number = input("Błędna wartość. Spróbuj ponownie:\n")
+    return number
 
 
 (a, b, c) = triangle_sides()
