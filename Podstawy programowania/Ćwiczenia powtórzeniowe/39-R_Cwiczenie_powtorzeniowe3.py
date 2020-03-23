@@ -11,7 +11,7 @@ def get_side(name):
       try:
           number = float(number)
           if number <= 0:
-              number = input("Długość boku trójkąta nie może być mniejsza lub równa 0. \nPodaj jeszcze raz długość boku " + name + " ")
+              number = input("Długość boku trójkąta nie może być mniejsza lub równa 0. \nPodaj jeszcze raz długość boku " + name + ": ")
           else:
             break
       except:
@@ -36,13 +36,13 @@ while choice == "t":
     c = get_side("c")
     while True:
         if a >= b + c:
-            print("Bok a jest za długi aby mógł powstać trójkąt")
+            print("Bok a jest za długi, aby mógł powstać trójkąt.")
             a = get_side("a")
         elif b >= a + c:
-            print("Bok b jest za długi aby mógł powstać trójkąt")
+            print("Bok b jest za długi, aby mógł powstać trójkąt.")
             b = get_side("b")
         elif c >= a + b:
-            print("Bok c jest za długi aby mógł powstać trójkąt")
+            print("Bok c jest za długi, aby mógł powstać trójkąt.")
             c = get_side("c")
         else:
             break
