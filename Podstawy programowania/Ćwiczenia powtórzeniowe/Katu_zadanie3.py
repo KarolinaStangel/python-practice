@@ -11,11 +11,14 @@ import math
 def get_side():
     length = input()
     while True:
-        if length.isdigit():
+        try:
             length = float(length)
-            if length > 0:
+            if length <= 0:
+                length = input("Długość boku nie może być mniejsza lub równa zero. Spróbuj jeszcze raz.\n")
+            else:
                 return length
-        length = input("Nieprawidłowa wartość. Spróbuj jeszcze raz.\n")
+        except:
+            length = input("Nieprawidłowa wartość. Spróbuj jeszcze raz.\n")
 
 
 def get_sides(sides_no):

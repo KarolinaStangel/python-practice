@@ -5,9 +5,10 @@
 def get_coefficient(coefficient_name):
     number = input("Podaj " + coefficient_name + ": ")
     while True:
-        if number.isdigit():
+        try:
             return float(number)
-        number = input("Nieprawidłowa wartość. Spróbuj jeszcze raz podać współczynnik " + coefficient_name + ".\n")
+        except:
+            number = input("Nieprawidłowa wartość. Spróbuj jeszcze raz podać współczynnik " + coefficient_name + ".\n")
 
 
 def solve_linear_equation(first_coefficient, second_coefficient):
@@ -20,7 +21,7 @@ def solve_linear_equation(first_coefficient, second_coefficient):
     else:
         x = 0 - second_coefficient / first_coefficient
         print("Rozwiązaniem równania " + equasion + " jest:")
-        print("x = " + str(x))
+        print("x = " + str(round(x, 2)))
 
 
 print("Będziemy rozwiązywać równanie o postaci:")

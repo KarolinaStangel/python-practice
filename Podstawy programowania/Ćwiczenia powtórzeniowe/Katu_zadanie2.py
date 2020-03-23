@@ -7,9 +7,14 @@ import math
 def get_coefficient(coefficient_name):
     number = input("Podaj " + coefficient_name + ": ")
     while True:
-        if number.isdigit():
+        try:
             return float(number)
-        number = input("Nieprawidłowa wartość. Spróbuj jeszcze raz podać współczynnik " + coefficient_name + ".\n")
+        except:
+            number = input("Nieprawidłowa wartość. Spróbuj jeszcze raz podać współczynnik " + coefficient_name + ".\n")
+
+
+def get_delta(a, b, c):
+    return b * b - 4 * a * c
 
 
 print("Będziemy rozwiązywać równanie o postaci:")
@@ -19,12 +24,12 @@ print("Podaj współczynniki a, b i c, aby otrzymać rozwiązanie.")
 a: float = get_coefficient("a")
 b: float = get_coefficient("b")
 c: float = get_coefficient("c")
-equasion: str = str(a) + "x^2 + " + str(b) + "x + " + str(c) + " = 0"
 
-delta: float = b * b - 4 * a * c
+equasion: str = str(a) + "x^2 + " + str(b) + "x + " + str(c) + " = 0"
+delta: float = get_delta(a, b, c)
 
 if a == 0:
-    print("Równanie " + equasion + " nie jest równanie kwadratowym.")
+    print("Równanie " + equasion + " nie jest równanim kwadratowym.")
 elif delta < 0:
     print("Równanie " + equasion + " nie ma rozwiązań w zbiorze liczb rzeczywistych.")
 elif delta == 0:
@@ -34,5 +39,5 @@ else:
     x1 = (0 - b - math.sqrt(delta)) / (2 * a)
     x2 = (0 - b + math.sqrt(delta)) / (2 * a)
     print("Rozwiązaniem równania " + str(a) + "x + " + str(b) + " = 0 są liczby: ")
-    print("x1 = " + str(x1))
-    print("x2 = " + str(x2))
+    print("x1 = " + str(round(x1, 2)))
+    print("x2 = " + str(round(x2, 2)))
