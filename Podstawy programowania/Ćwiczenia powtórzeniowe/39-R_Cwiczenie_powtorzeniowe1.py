@@ -32,7 +32,7 @@ def prevent_0_division():
 
 choice = "t"
 while choice == "t":
-    print("Mamy równanie: ax+b=0. \nW celu obliczenia warości x proszę wprowadzić wartości dla zmiennych a i b:")
+    print("Mamy równanie: ax+b=0. \nW celu obliczenia warości x proszę wprowadzić wartości dla zmiennych a i b: ")
     a = prevent_0_division()
     b = get_number("b")
     x = (-b)/a
