@@ -30,7 +30,7 @@ while choice == "t":
     b = get_number("b")
     c = get_number("c")
     delta = float(b ** 2 - 4 * a * c)
-    print("delta =", round(delta, 2))
+    print("Delta =", round(delta, 2))
     if delta < 0:
         print("Ponieważ delta jest mniejsza od zera, równanie nie ma rozwiązań w zbiorze liczb rzeczywistych.")
     elif delta == 0:
