@@ -29,7 +29,7 @@ equasion: str = str(a) + "x^2 + " + str(b) + "x + " + str(c) + " = 0"
 delta: float = get_delta(a, b, c)
 
 if a == 0:
-    print("Równanie " + equasion + " nie jest równanim kwadratowym.")
+    print("Równanie " + equasion + " nie jest równaniem kwadratowym.")
 elif delta < 0:
     print("Równanie " + equasion + " nie ma rozwiązań w zbiorze liczb rzeczywistych.")
 elif delta == 0:
@@ -38,6 +38,6 @@ elif delta == 0:
 else:
     x1 = (0 - b - math.sqrt(delta)) / (2 * a)
     x2 = (0 - b + math.sqrt(delta)) / (2 * a)
-    print("Rozwiązaniem równania " + str(a) + "x + " + str(b) + " = 0 są liczby: ")
+    print("Rozwiązaniem równania " + equasion + " są liczby: ")
     print("x1 = " + str(round(x1, 2)))
     print("x2 = " + str(round(x2, 2)))
